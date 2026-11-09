@@ -1,0 +1,29 @@
+name: Deploy to Dev
+
+on:
+  pull_request:
+    types: [ closed ]
+    branches: [ dev ]
+
+jobs:
+  ci:
+    uses: ProgressPlayDevTeam/Pipelines/.github/workflows/build.yml@v1
+    if: github.event.pull_request.merged == true
+    permissions:
+      packages: write
+      actions: write
+      contents: read
+    with:
+      image: bogateway
+      push: true
+    secrets: inherit
+
+  cd-dev:
+    needs: ci
+    uses: ProgressPlayDevTeam/Pipelines/.github/workflows/deploy.yml@v1
+    with:
+      repo: be
+      app: casino-bogateway
+      version: ${{ needs.ci.outputs.tag }}
+      env-to: dev
+    secrets: inherit

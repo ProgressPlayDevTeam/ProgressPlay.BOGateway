@@ -1,0 +1,303 @@
+{
+  "Routes": [
+    //boapi
+    {
+      "DownstreamPathTemplate": "/api/LoginService/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/LoginService/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    //Bonus
+    {
+      "DownstreamPathTemplate": "/api/Bonus/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Bonus/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Roles/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Roles/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/BOUsers/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/BOUsers/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/gateway/enums/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/enum/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Documents/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/MenuRoles/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/MenuRoles/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Permissions/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Permissions/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlayerInfo/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/PlayerInfo/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlayerStatus/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/PlayerStatus/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlayerDetails/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/PlayerDetails/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Presets/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Presets/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/NotificationBatch/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/NotificationBatch/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Reports/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.boapi.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Reports/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    //interactions
+    {
+      "DownstreamPathTemplate": "/api/Interactions{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.interactions.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Interactions{everything}",
+      "SwaggerKey": "interactions"
+    },
+    //static Data
+    {
+      "DownstreamPathTemplate": "/api/StaticData{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.staticdata.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/StaticData{everything}",
+      "UpstreamHttpMethod": [ "Post", "Get" ],
+      "SwaggerKey": "staticdata"
+    },
+    //compliance management
+    {
+      "DownstreamPathTemplate": "/api/ReviewConfiguration{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.compliancemanagement.api",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "compliancemanagement",
+      "UpstreamPathTemplate": "/api/ReviewConfiguration{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ActionConfiguration{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.compliancemanagement.api",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "compliancemanagement",
+      "UpstreamPathTemplate": "/api/ActionConfiguration{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MessageBindings{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.compliancemanagement.api",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "compliancemanagement",
+      "UpstreamPathTemplate": "/api/MessageBindings{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Cases{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.compliancemanagement.api",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "compliancemanagement",
+      "UpstreamPathTemplate": "/api/Cases{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5011",
+    "RequestIdKey": "OcRequestId1",
+    "RateLimitOptions": {
+      "DisableRateLimitHeaders": true
+    }
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "boapi",
+      "Config": [
+        {
+          "Name": "BO API",
+          "Version": "v1",
+          "Url": "http://pp.boapi.api/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "staticdata",
+      "Config": [
+        {
+          "Name": "static data API",
+          "Version": "v1",
+          "Url": "http://pp.staticdata.api/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "interactions",
+      "Config": [
+        {
+          "Name": "BO Interactions API",
+          "Version": "v1",
+          "Url": "http://pp.interactions.api/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "compliancemanagement",
+      "Config": [
+        {
+          "Name": "Compliance Management API",
+          "Version": "v1",
+          "Url": "http://pp.compliancemanagement.api/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

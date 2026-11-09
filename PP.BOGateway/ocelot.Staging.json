@@ -1,0 +1,1001 @@
+{
+  "Routes": [
+    //kycgateway
+    {
+      "DownstreamPathTemplate": "/api/KycChecks/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "kycgateway",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/KycChecks/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    //boapi 
+    {
+      "DownstreamPathTemplate": "/api/LoginService/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/LoginService/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    //Bonus
+    {
+      "DownstreamPathTemplate": "/api/Bonus/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Bonus/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Roles/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Roles/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/BOUsers/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/BOUsers/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/enum/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/enum/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/BOComments/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/BOComments/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/BOPromotions/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/BOPromotions/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/BOTransactions/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/BOTransactions/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/WithdrawalRequests/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/WithdrawalRequests/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/AllowedIPs/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AllowedIPs/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/BlockedIPs/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/BlockedIPs/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/BlockedEmail/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/BlockedEmail/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Identity/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Identity/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/AmlInteraction/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AmlInteraction/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/EventLog/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/EventLog/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Countries/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Countries/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/SystemSettings/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/SystemSettings/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/BOChanges/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/BOChanges/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/BonusOptIn/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/BonusOptIn/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Documents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Documents/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/SideGames/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/SideGames/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Metadata/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Metadata/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/KYC/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/KYC/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/RGEvents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/RGEvents/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/ReportsEddSof/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ReportsEddSof/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Reports/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Reports/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Leaderboards/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Leaderboards/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/SupportTickets/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/SupportTickets/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/WinningRestrictions/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/WinningRestrictions/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/AffiliateTrackers/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AffiliateTrackers/{everything}",
+      "SwaggerKey": "boapi"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/MenuRoles/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/MenuRoles/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Permissions/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Permissions/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlayerInfo/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/PlayerInfo/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlayerArchive/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/PlayerArchive/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlayerStatus/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/PlayerStatus/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlayerDetails/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/PlayerDetails/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Presets/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Presets/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/NotificationBatch/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/NotificationBatch/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserMenuFavorites/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UserMenuFavorites/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/ContentTemplates/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ContentTemplates/{everything}",
+      "SwaggerKey": "boapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Department/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "boapi",
+      "UpstreamPathTemplate": "/api/Department/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/NotificationTrigger/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "boapi",
+      "UpstreamPathTemplate": "/api/NotificationTrigger/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Vendor/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "boapi",
+      "UpstreamPathTemplate": "/api/Vendor/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Vendor",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "boapi",
+      "UpstreamPathTemplate": "/api/Vendor",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/InfoContent/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "boapi",
+      "UpstreamPathTemplate": "/api/InfoContent/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Occupation/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "boapi",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+      "UpstreamPathTemplate": "/api/Occupation/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/KYC6Match/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "boapi",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+      "UpstreamPathTemplate": "/api/KYC6Match/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Currency{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "boapi",
+      "UpstreamPathTemplate": "/api/Currency{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Licensee{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "boapi",
+      "UpstreamPathTemplate": "/api/Licensee{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/CommentBuilders{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "boapi",
+      "UpstreamPathTemplate": "/api/CommentBuilders{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/api/OpenBanking/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "boapi",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "boapi",
+      "UpstreamPathTemplate": "/api/OpenBanking/{everything}"
+    },
+    // Open Banking
+    {
+      "DownstreamPathTemplate": "/api/OpenBankingBackOffice/GetProviderConsoleLink{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "openbanking",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "openbanking",
+      "UpstreamPathTemplate": "/api/OpenBankingBackOffice/GetProviderConsoleLink{everything}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    //interactions
+    {
+      "DownstreamPathTemplate": "/api/Interactions/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "interactions",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Interactions/{everything}",
+      "SwaggerKey": "interactions"
+    },
+    {
+      "DownstreamPathTemplate": "/api/InteractionSettings/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "interactions",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/InteractionSettings/{everything}",
+      "SwaggerKey": "interactions"
+    },
+    //static Data
+    {
+      "DownstreamPathTemplate": "/api/StaticData{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "staticdata",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/StaticData{everything}",
+      "UpstreamHttpMethod": [ "Post", "Get" ],
+      "SwaggerKey": "staticdata"
+    },
+    //gameservices-crmHelper
+    {
+      "DownstreamPathTemplate": "/CRMHelper{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "crmhelper",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/CRMHelper{everything}",
+      "SwaggerKey": "crmHelper"
+    },
+
+    // Identity
+    {
+      "DownstreamPathTemplate": "/api/role/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "identity",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "identity",
+      "UpstreamPathTemplate": "/api/role/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "identity",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "identity",
+      "UpstreamPathTemplate": "/api/user/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/authorization/refresh-reports-token",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "identity",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "identity",
+      "UpstreamPathTemplate": "/api/authorization/refresh-reports-token",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/claims/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "identity",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "identity",
+      "UpstreamPathTemplate": "/api/claims/{everything}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    // GameManagement
+    {
+      "DownstreamPathTemplate": "/api/GameManagement/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "gamemanagement",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "gamemanagement",
+      "UpstreamPathTemplate": "/api/GameManagement/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Game/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "gamemanagement",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "gamemanagement",
+      "UpstreamPathTemplate": "/api/Game/{everything}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    // LexiconManagement
+    {
+      "DownstreamPathTemplate": "/api/LexiconManagement/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "lexiconmanagement",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "lexiconmanagement",
+      "UpstreamPathTemplate": "/api/LexiconManagement/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+
+    // Safer Gambling
+    {
+      "DownstreamPathTemplate": "/api/GamblingManagement/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "safergambling",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "safergambling",
+      "UpstreamPathTemplate": "/api/GamblingManagement/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+
+    // Promotions
+    {
+      "DownstreamPathTemplate": "/api/PromotionsInfoManagement/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "promotions",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "promotions",
+      "UpstreamPathTemplate": "/api/PromotionsInfoManagement/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    // Compliance Management
+    {
+      "DownstreamPathTemplate": "/api/ReviewConfiguration{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "compliancemanagement",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "compliancemanagement",
+      "UpstreamPathTemplate": "/api/ReviewConfiguration{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ActionConfiguration{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "compliancemanagement",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "compliancemanagement",
+      "UpstreamPathTemplate": "/api/ActionConfiguration{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MessageBindings{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "compliancemanagement",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "compliancemanagement",
+      "UpstreamPathTemplate": "/api/MessageBindings{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Cases{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "compliancemanagement",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "compliancemanagement",
+      "UpstreamPathTemplate": "/api/Cases{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5011",
+    "RequestIdKey": "OcRequestId1",
+    "RateLimitOptions": {
+      "DisableRateLimitHeaders": true
+    }
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "boapi",
+      "Config": [
+        {
+          "Name": "BO API",
+          "Version": "v1",
+          "Url": "http://boapi/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "staticdata",
+      "Config": [
+        {
+          "Name": "static data API",
+          "Version": "v1",
+          "Url": "http://staticdata/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "interactions",
+      "Config": [
+        {
+          "Name": "Interactions API",
+          "Version": "v1",
+          "Url": "http://interactions/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "crmHelper",
+      "Config": [
+        {
+          "Name": "CRMHelper API",
+          "Version": "v1",
+          "Url": "http://crmhelper/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "identity",
+      "Config": [
+        {
+          "Name": "Identity API (stg)",
+          "Version": "v1",
+          "Url": "http://identity/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "gamemanagement",
+      "Config": [
+        {
+          "Name": "Game Management API",
+          "Version": "v1",
+          "Url": "http://gamemanagement/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "lexiconmanagement",
+      "Config": [
+        {
+          "Name": "Lexicon Management API",
+          "Version": "v1",
+          "Url": "http://lexiconmanagement/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "safergambling",
+      "Config": [
+        {
+          "Name": "Safer Gambling API",
+          "Version": "v1",
+          "Url": "http://safergambling/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "promotions",
+      "Config": [
+        {
+          "Name": "Promotions API",
+          "Version": "v1",
+          "Url": "http://promotions/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "openbanking",
+      "Config": [
+        {
+          "Name": "OpenBanking API",
+          "Version": "v1",
+          "Url": "http://openbanking/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "compliancemanagement",
+      "Config": [
+        {
+          "Name": "Compliance Management API",
+          "Version": "v1",
+          "Url": "http://compliancemanagement/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

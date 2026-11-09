@@ -1,0 +1,36 @@
+name: Deploy to Prod
+
+on:
+  pull_request:
+    types: [ closed ]
+    branches: [ main ]
+
+jobs:
+  ci:
+    uses: ProgressPlayDevTeam/Pipelines/.github/workflows/build.yml@v1
+    if: |
+      github.event.pull_request.merged == true &&
+      !(github.head_ref == 'dev' && github.base_ref == 'main')
+    permissions:
+      packages: write
+      actions: write
+      contents: read
+    with:
+      image: bogateway
+      push: true
+    secrets: inherit
+
+  cd-prod:
+    needs: ci
+    if: |
+      github.event.pull_request.merged == true &&
+      !cancelled() &&
+      needs.ci.result != 'failure'
+    uses: ProgressPlayDevTeam/Pipelines/.github/workflows/deploy.yml@v1
+    with:
+      version: ${{ needs.ci.result == 'success' && needs.ci.outputs.tag || '' }}
+      repo: be
+      app: casino-bogateway
+      env-from: dev
+      env-to: prod-bo
+    secrets: inherit

@@ -1,0 +1,218 @@
+{
+  "Routes": [
+    //gameservices-cmshelper
+    {
+      "DownstreamPathTemplate": "/CMSHelper.svc{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "gs.cmshelper.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/CMSHelper.svc{everything}"
+    },
+    //gameservices-clientHelper
+    {
+      "DownstreamPathTemplate": "/ClientHelper.svc{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "gs.clienthelper.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/ClientHelper.svc{everything}"
+    },
+    //gameservices-crmHelper
+    {
+      "DownstreamPathTemplate": "/crmHelper.svc{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "gs.crmHelper.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/crmHelper.svc{everything}"
+    },
+
+    //gameservices-documentshelper
+    {
+      "DownstreamPathTemplate": "/DocumentsHelper.svc{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "gs.documentshelper.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/DocumentsHelper.svc{everything}"
+    },
+
+    //gameservices-jackpothelper
+    {
+      "DownstreamPathTemplate": "/JackpotHelper.svc{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "gs.jackpothelper.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/JackpotHelper.svc{everything}"
+    },
+
+    //gameservices-logshelper
+    {
+      "DownstreamPathTemplate": "/LogsHelper{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "gs.logshelper.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/LogsHelper{everything}",
+      "SwaggerKey": "logshelper"
+    },
+    
+
+    //api/fraudservice
+    {
+      "DownstreamPathTemplate": "/api/fraudservice{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.fraud.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/fraudservice{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    //static Data
+    {
+      "DownstreamPathTemplate": "/api/staticdata{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "pp.staticdata.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/DDL{everything}",
+      "UpstreamHttpMethod": [ "Post", "Get" ],
+      "SwaggerKey": "staticdata"
+    },
+    //compliance management
+    {
+      "DownstreamPathTemplate": "/api/ReviewConfiguration{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5245
+        }
+      ],
+      "SwaggerKey": "compliancemanagement",
+      "UpstreamPathTemplate": "/api/ReviewConfiguration{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ActionConfiguration{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5245
+        }
+      ],
+      "SwaggerKey": "compliancemanagement",
+      "UpstreamPathTemplate": "/api/ActionConfiguration{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MessageBindings{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5245
+        }
+      ],
+      "SwaggerKey": "compliancemanagement",
+      "UpstreamPathTemplate": "/api/MessageBindings{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Cases{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5245
+        }
+      ],
+      "SwaggerKey": "compliancemanagement",
+      "UpstreamPathTemplate": "/api/Cases{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5010",
+    "RequestIdKey": "OcRequestId"
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "fraudservice",
+      "Config": [
+        {
+          "Name": "fraudservice API",
+          "Version": "v1",
+          "Url": "http://pp.fraud.api/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "staticdata",
+      "Config": [
+        {
+          "Name": "static data API",
+          "Version": "v1",
+          "Url": "http://pp.staticdata.api/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "transactions",
+      "Config": [
+        {
+          "Name": "transactions API",
+          "Version": "v1",
+          "Url": "http://pp.transactions.api/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "logshelper",
+      "Config": [
+        {
+          "Name": "gameservices API",
+          "Version": "v1",
+          "Url": "http://gs.logshelper.api/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "compliancemanagement",
+      "Config": [
+        {
+          "Name": "Compliance Management API",
+          "Version": "v1",
+          "Url": "http://localhost:5245/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

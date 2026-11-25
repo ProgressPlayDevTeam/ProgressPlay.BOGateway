@@ -797,6 +797,20 @@
       "UpstreamPathTemplate": "/api/LexiconManagement/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
     },
+    // TooltipManagement (hosted by the LexiconManagement API)
+    {
+      "DownstreamPathTemplate": "/api/TooltipManagement/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "lexiconmanagement",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "lexiconmanagement",
+      "UpstreamPathTemplate": "/api/TooltipManagement/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
 
     // Safer Gambling
     {
